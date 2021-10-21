@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+
+}
+
+html,
+body {
+
+  --black: hsl(240, 6%, 13%);
+  --grey: hsl(240, 9%, 89%); /* grey agora é uma varíavel, hue:cor, saturation: saturação, lightness: claridade */
+
+  height: 100%;
+  font-family: "Roboto", sans-serif; /* a sans-serif será carregada caso a primeira fonte não seja carregada*/
+  -webkit-font-smoothing: antialiased;    /* suaviza a fonte em navegadores webkit*/ 
+ 
+}
+
+body {
+  display: grid; /* use o inspecionar elemento do navegador para ver a área que o body cobre na página, ele separada tudo em quadrados iguais de mesmo tamanho */
+  place-items: center;
+}
+
+main {
+  background: url(img/background.svg);
+  width: 375px;
+  height: 812px;
+  
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  color: var(--grey);
+}
+
+.avatar{
+  width: 10rem;
+  margin: 11.5rem  auto 0;
+  position: relative; 
+}
+
+.avatar span {             /* caça somente o span dentro da classe avatar */
+  position: absolute;
+  top: -15px;
+  z-index: 1;             /* sobrepõe a imagem no eixo z */
+}
+
+.avatar > img {
+  width: 10rem;
+  height: 11.5rem; 
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%); /* modifica o formato da imagem */
+
+}
+
+h1 {
+  font-size: 1.5rem;
+
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--grey);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+  
+}
+
+p{
+  margin-top: 2rem;
+  text-align: justify-all;
+
+
+}
+
+ul {
+  list-style: none;  /* remove as bolinhas de cada li */
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+  margin-top: 4rem;
+}
