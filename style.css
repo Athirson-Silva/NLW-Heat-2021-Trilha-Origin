@@ -113,7 +113,7 @@ ul {
       filter: hue-rotate(100deg);
     }
     50%{
-      filter: hue-rotate(190deg);
+      filter: hue-rotate(180deg);
     }
     100% {
       filter: hue-rotate(100deg);
