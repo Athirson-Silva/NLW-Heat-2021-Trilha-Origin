@@ -93,3 +93,30 @@ ul {
 
   margin-top: 4rem;
 }
+
+#twitter,  #facebook , #instagram, #youtube{
+    font-size: 2em;
+    background-color: #18191f;
+    color: #fff;
+    box-shadow: 2px 2px 2px #00000080;
+    border-radius: 8px;
+    padding: 4px 11px;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff, 0 0 200px #0072ff;
+    animation-delay: 0.3s;
+  }
+  
+  
+  
+  @keyframes animate {
+    0% {
+      filter: hue-rotate(100deg);
+    }
+    50%{
+      filter: hue-rotate(190deg);
+    }
+    100% {
+      filter: hue-rotate(100deg);
+
+    }
+  }
